@@ -16,67 +16,60 @@
 <body>
 
     <div class="container-fluid">
-        <div id="navbg" class="container-fluid">
-            <div id="nav" "container">
-                
-                    <h1 class="name" "navbar-brand" "container">Dianne</h1>
+    
+        <!-- Navigation-->
+        <div id="navbg">
 
-                    <div class="links" "navbar-nav">
+            <div id="navbg" class="container-fluid clearfix">
+                <div id="nav">
+                    <h1 id="name">Dianne</h1>
+                    <div id="links">
                         <ul class="nav justify content-end">
-                            <li class="nav-item" "active"> <a href ="index.html" class="nav-link"> About </a> </li>
+                            <li class="nav-item" "active"> <a href="index.html" class="nav-link"> About </a> </li>
                             <li class="nav-item"> <a href="portfolio.html" class="nav-link"> Portfolio </a> </li>
-                            <li class="nav-item"> <a href="contact.html"class="nav-link"> Contact </a> </li>
+                            <li class="nav-item"> <a href="contact.html" class="nav-link"> Contact </a> </li>
                         </ul>
                     </div>
-            </div>
-        </div> 
-        
-        <div class="contacts" "container-fluid">
-            <h2>Contact</h2>
-            <hr/>
-
-            <div class= "form" "container">
-                
-                <div class= "row">
-                    
-                    <form action="/action_page.php" class="col-xs-12 col-sm-12 col-m-8 col-1-4">
-                                <!--Name input area here-->
-                                    <labelfor="name">Name:</labelfor>
-                                    <input type="name" class="form-control" id="name" placeholder="John Smith" name="name">
-
-                                </br>
-
-                                <!--E-mail input area here-->
-                                    <labelfor="email">E-mail:</labelfor>
-                                    <input type="email" class="form-control" id="email" placeholder="example.gmail.com" name="email">
-
-                                </br>
-
-                                <!--Message box here-->
-                                <form action="/my-handling-form-page" method="post" class="container">
-                                    <div class="form-group">
-                                        <label for="message"> Message: </label>
-                                        <textarea class="form-control" rows="8"> </textarea> 
-                                    </div>
-
-                                    <input type="submit" value="Submit">
-
-                    </form>
                 </div>
-
             </div>
-
+            
         </div>
-    </div>
+    
+        <!-- Main Content -->
+        <div id="content" class="container">
+            
+            <main class="row">
+                <div class="col-12">
+                    <h2> About Me</h2>
+                    <hr/>
+                </div>
+    
+                <div class="col-12">
+                    <form>
+                        <!-- Name form group -->
+                        <div class="form-group p-1">
+                            <label for="Name"> Name </label>                            
+                            <input type="name" class="form-control" id="input-name" aria-describedby="nameHelp" placeholder="">                            
+                        </div>
+                    
+                        <!-- E-mail form group-->
+                        <div class="form-group p-1">
+                            <label for="example.gmail.com"> Email address </label>                            
+                            <input type="email" class="form-control" id="input-email" aria-describedby="emailHelp" placeholder="">                            
+                        </div>
 
-        
-     </div>
-
+                        <!-- Message area-->
+                        <div class="form-group p-1">
+                            <label for="exampleFormControlTextarea1">Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>                    
+                    </form>                    
+            </main>
+            
+        </div>
+    
+        <!-- Footer -->
         <footer class="container-fluid" "fixed-bottom" "row"> Copyright &copy;</footer>
  
-        <footer>Copyright &copy;</footer>
-
-
-
 </body>
 </html>
